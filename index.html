@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAQQI TECH</title>
+</head>
+<body>
+    <script>
+        const titleChange = () =>{
+            const originalTitle = document.title;
+            let isTitle = false
+            const changeTitle = () =>{
+                document.title = isTitle ? 
+                'Follow @shaqqitech' : originalTitle;
+                isTitle = !isTitle;
+            }
+            setInterval(changeTitle, 1000);
+        }
+
+        window.onload = titleChange();
+    </script>
+</body>
+</html>
